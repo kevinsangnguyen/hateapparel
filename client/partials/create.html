@@ -1,0 +1,11 @@
+<div ng-controller="DashboardController">
+	<a href="/#dashboard" style="float:right">Cancel</a>
+	<h1>Put the question and options here:</h1>
+	Question <input type="text" ng-model="new_poll.question"><br>
+	Option 1: <input type="text" ng-model="new_poll.option1.name">
+	Option 2: <input type="text" ng-model="new_poll.option2.name">
+	Option 3: <input type="text" ng-model="new_poll.option3.name">
+	Option 4: <input type="text" ng-model="new_poll.option4.name">
+	<button ng-click="create_poll()">Create Poll</button>
+	<h1 style="color:red" ng-repeat="error in errors">{{error.message}}</h1>
+</div>
