@@ -1,5 +1,5 @@
 {
-  "name": "BlackBelt_Exam",
+  "name": "Project",
   "dependencies": {
     "body-parser": "^1.14.2",
     "ejs": "1.0.0",

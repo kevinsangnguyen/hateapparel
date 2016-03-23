@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>BlackBelt</title>
+	<title>Project</title>
 	<!-- require angular -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
@@ -8,24 +8,16 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js'>
 	</script>
 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script type='text/javascript'>
-  
+
 	var board = angular.module('board', ['ngRoute','ui.bootstrap']);
 
 	board.config(function ($routeProvider, $locationProvider) {
       $routeProvider
         .when('/',{
-            templateUrl: 'partials/login.html'
-        })
-        .when('/dashboard',{
-            templateUrl: 'partials/dashboard.html'
-        })
-        .when('/create',{
-            templateUrl: 'partials/create.html'
-        })
-        .when('/poll/:_id',{
-            templateUrl: 'partials/poll.html'
+            templateUrl: 'partials/first.html'
         })
         .otherwise({
           redirectTo: '/'
@@ -33,9 +25,8 @@
     });
 
 	</script>
-	<script type="text/javascript" src="./factories/user_factory.js"></script>
+	<!-- CONTROLLERS / FACTORIES -->
   <script type="text/javascript" src="./factories/poll_factory.js"></script>
-	<script type="text/javascript" src="./controllers/user_controller.js"></script>
   <script type="text/javascript" src="./controllers/dashboard_controller.js"></script>
 </head>
 <body ng-app='board'>
