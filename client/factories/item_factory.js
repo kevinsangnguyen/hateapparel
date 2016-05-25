@@ -1,4 +1,4 @@
-board.factory('PollFactory', function($http) {
+board.factory('ItemFactory', function($http) {
 		var factory = {};
 		// var polls = [];
 		//

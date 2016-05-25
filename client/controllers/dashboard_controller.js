@@ -1,4 +1,4 @@
-board.controller('DashboardController', function($scope,$location,$routeParams,UserFactory,PollFactory) {
+board.controller('DashboardController', function($scope,$location,$routeParams,ItemFactory) {
 
 
 	// PollFactory.index(function(data){
