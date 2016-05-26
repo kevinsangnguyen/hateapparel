@@ -4,16 +4,21 @@ body{
 a{
   background: none;
 }
-
-img{
+#slides_control > div{
+  	height: 200px;
+}
+.hero > img{
 	position: relative;
   	margin:auto;
-  	width: 60%;
-  	height: 50%;
+  	width: 100%;
+  	height: 60%;
 }
 #slides_control {
-  	width: 50%;
-  	height: 50%;
+  	position:absolute;
+  	width: 400px;
+  	left:50%;
+  	top:20px;
+ 	margin-left:-200px;
 }
 .carousel .carousel-control { 
 	visibility: hidden; 
