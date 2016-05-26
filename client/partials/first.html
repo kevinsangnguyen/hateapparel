@@ -1,3 +1,12 @@
-<div ng-controller="DashboardController">
-	<h1> Template MEAN Website </h1>
+<div ng-controller="CarouselController" id="slides_control">
+	<div class="">
+	  <uib-carousel interval="myInterval">
+	    <uib-slide ng-repeat="slide in slides" active="slide.active">
+	      <img ng-src="{{slide.image}}">
+	      <div class="carousel-caption">
+	        <h4>FIRE! {{$index+1}}</h4>
+	      </div>
+	    </uib-slide>
+	  </uib-carousel>
+	</div>
 </div>
