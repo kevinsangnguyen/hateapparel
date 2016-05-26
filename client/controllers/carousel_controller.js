@@ -1,4 +1,4 @@
-board.controller('DashboardController', function ($scope) {
+board.controller('CarouselController', function ($scope) {
 	$scope.myInterval = 3000;
     
     $scope.slides = [
