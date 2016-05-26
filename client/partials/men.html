@@ -11,8 +11,6 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js'>
 	</script>
 
-
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -39,9 +37,11 @@
 <div id="mendiv" ng-controller="StoreController as store">
 	<h3>Men's Products</h3>
 	<div class="allitems">
-		<div class="item col-sm-3" ng-repeat="product in store.menproducts">
-		<img ng-src="">
+		<div class="item col-sm-3 thumbnail" ng-repeat="product in store.menproducts">
+			<img ng-src="/">
 			<h3>product.name</h3>
+
+
 		</div>
 
 	</div>
