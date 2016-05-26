@@ -31,6 +31,9 @@
         .when('/about',{
             templateUrl: 'partials/about.html'
         })
+        .when('/men',{
+            templateUrl: 'partials/men.html'
+        })        
         .otherwise({
           redirectTo: '/'
         });
@@ -51,8 +54,8 @@
     </div>
     <div id="navbar-list">
 			<ul class="nav navbar-nav">
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
+          <li class="hvr-underline-from-center"><a href="#">Men</a></li>
+          <li class="hvr-underline-from-center"><a href="#">Women</a></li>
       </ul>
       <ul id="navright" class="nav navbar-nav navbar-right">
 				<li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>

@@ -14,35 +14,32 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script type='text/javascript'>
 
-	var board = angular.module('board', ['ngRoute','ui.bootstrap']);
-
-	board.config(function ($routeProvider, $locationProvider) {
-      $routeProvider
-        .when('/',{
-            templateUrl: 'partials/first.html'
-        })
-        .otherwise({
-          redirectTo: '/'
-        });
-    });
-
-	</script>
 	<!-- CONTROLLERS / FACTORIES -->
   <script type="text/javascript" src="./factories/item_factory.js"></script>
   <script type="text/javascript" src="./controllers/dashboard_controller.js"></script>
 </head>
-
+<div ng-app="store">
 <div id="mendiv" ng-controller="StoreController as store">
-	<h3>Men's Products</h3>
-	<div class="allitems">
-		<div class="item col-sm-3 thumbnail" ng-repeat="product in store.menproducts">
-			<img ng-src="/">
-			<h3>product.name</h3>
-
-
-		</div>
-
+	<h2>Men's Products</h2>
+	<div class="allitems row">
+<!-- 		<div class="item col-sm-3 thumbnail" ng-repeat="product in store.menproducts">
+			<img ng-src="/"> -->
+			<div class="item col-md-3 thumbnail">
+				<img src="./images/menshirt.jpg">
+				<h5>Printed Cotton T-Shirt</h5>
+				<p>$25</p>
+			</div>
+			<div class="item col-md-3 thumbnail">
+				<img src="./images/menshirt.jpg">
+				<h5>Printed Cotton T-Shirt</h5>
+				<p>$25</p>
+			</div>
+			<div class="item col-md-3 thumbnail">
+				<img src="./images/menshirt.jpg">
+				<h5>Printed Cotton T-Shirt</h5>
+				<p>$25</p>
+			</div>
 	</div>
+</div>
 </div>
