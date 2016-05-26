@@ -1,23 +1,6 @@
 body{
   font-family: 'Poppins', sans-serif !important;
 }
-#slides_control > div{
-  height: 200px;
-}
-img{
-  margin:auto;
-  width: 1000px;
-  height: 1000px;
-}
-#slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  margin-left:-200px;
-}
-.carousel .carousel-control { 
-	visibility: hidden; 
-}
 a{
   background: none;
 }
@@ -26,7 +9,6 @@ a{
   position: relative;
   height: 60vh;
   z-index: -2;
-  background: url("https://unsplash.it/2000/800?image=563") center top/cover no-repeat;
 }
 .overlay {
   position: absolute;
@@ -36,6 +18,19 @@ a{
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,0.6);
+}
+img{
+	position: relative;
+  	margin:auto;
+  	width: 60%;
+  	height: 50%;
+}
+#slides_control {
+  	width: 50%;
+  	height: 50%;
+}
+.carousel .carousel-control { 
+	visibility: hidden; 
 }
 .main-content {
   background: #f2f2f2;

@@ -62,6 +62,14 @@
 </nav>
 <!-- some content to allow scrolling :)-->
 <div class="hero">
+	<uib-carousel id="carousel" interval="myInterval">
+	    <uib-slide class="slide" ng-repeat="slide in slides" active="slide.active">
+	      <img ng-src="{{slide.image}}">
+	      <div class="carousel-caption">
+	        <h4>FIRE! {{$index+1}}</h4>
+	      </div>
+	    </uib-slide>
+	</uib-carousel>
   <div class="overlay"></div>
 </div>
 <div class="main-content">
