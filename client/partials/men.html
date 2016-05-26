@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Hāte Apparel</title>
 	<!-- FONT -->
@@ -27,9 +25,6 @@
         .when('/',{
             templateUrl: 'partials/first.html'
         })
-        .when('/about',{
-            templateUrl: 'partials/about.html'
-        })
         .otherwise({
           redirectTo: '/'
         });
@@ -41,8 +36,13 @@
   <script type="text/javascript" src="./controllers/dashboard_controller.js"></script>
 </head>
 
-<body ng-app='board'>
-  <div ng-view=''>
-  </div>
-</body>
-</html>
+<div id="mendiv" ng-controller="StoreController as store">
+	<h3>Men's Products</h3>
+	<div class="allitems">
+		<div class="item col-sm-3" ng-repeat="product in store.menproducts">
+		<img ng-src="">
+			<h3>product.name</h3>
+		</div>
+
+	</div>
+</div>
