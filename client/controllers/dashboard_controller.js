@@ -13,7 +13,6 @@ function switchInto() {
   // add/remove CSS classes
 	$scope.start= false;
 	$scope.into = true;
-  console.log('into transition triggered!');
 };
 
 // transition Start
@@ -23,7 +22,6 @@ function switchStart() {
   // add/remove CSS classes
 	$scope.into = false;
 	$scope.start = true;
-  console.log('start transition triggered!');
 }
 
 // set `scrolling` to true when user scrolls
@@ -54,6 +52,10 @@ setInterval(function () {
   };
   // take a breath.. hold event listener from firing for 100ms
 }, 100);
+
+$dom = '<div class="table-responsive"><table class="table"><tr class="danger"><th>th1</th><th>th2</th><tr><tr><td>td1</td><td>td2</td><tr></table></div>';
+$scope.default = $dom;
+$scope.unsafeHtml = $dom;
 
 
 });
