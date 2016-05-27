@@ -39,6 +39,12 @@
         });
     });
 
+		board.config(['$uibTooltipProvider', function($uibTooltipProvider){
+    	$uibTooltipProvider.setTriggers({
+        'mouseenter' : 'outsideClick'
+    	});
+		}]);
+
 	</script>
 	<!-- CONTROLLERS / FACTORIES -->
   <script type="text/javascript" src="./factories/item_factory.js"></script>
@@ -58,7 +64,7 @@
           <li class="hvr-underline-from-center"><a href="#">Women</a></li>
       </ul>
       <ul id="navright" class="nav navbar-nav navbar-right">
-				<i uib-popover="I appeared on mouse enter!" popover-trigger="mouseenter" class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+				<li uib-popover-html="htmlPopover" popover-trigger="mouseenter" popover-placement="bottom-right"><i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i></li>
       </ul>
     </div>
   </div>

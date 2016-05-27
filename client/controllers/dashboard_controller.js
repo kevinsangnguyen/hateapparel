@@ -1,4 +1,4 @@
-board.controller('DashboardController', function($scope,$location,$routeParams,ItemFactory,$window) {
+board.controller('DashboardController', function($scope,$location,$routeParams,ItemFactory,$window,$sce) {
 
 
 scrolling = false,
@@ -52,6 +52,8 @@ setInterval(function () {
   };
   // take a breath.. hold event listener from firing for 100ms
 }, 100);
+
+	$scope.htmlPopover = $sce.trustAsHtml('<div style="color:black">Test</div>');
 
   //carousel slides below.
   $scope.myInterval = 0;

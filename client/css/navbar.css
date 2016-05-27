@@ -39,6 +39,7 @@
   text-align: center;
 }
 
+
 @media screen and (max-width: 760px) {
   #navbar-list{
     display:block;
@@ -46,6 +47,7 @@
   #navright{
     float:left;
     display:block;
+    color: #1d62ab;
   }
   .hvr-underline-from-center, .hvr-underline-from-center:before, .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
     display:none;
@@ -92,7 +94,13 @@
 }
 .navbar--color--ghost .navbar-brand,
 .navbar--color--ghost .navbar-text,
-.navbar--color--ghost a {
+.navbar--color--ghost {
+  color: #fff;
+}
+
+.navbar--color--ghost .navbar-brand,
+.navbar--color--ghost .navbar-text,
+.navbar--color--ghost a{
   color: #fff;
 }
 
