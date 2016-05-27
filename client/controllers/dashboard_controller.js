@@ -56,7 +56,7 @@ setInterval(function () {
 }, 100);
 
   //carousel slides below. 
-  $scope.myInterval = 3000;
+  $scope.myInterval = 0;
 
       $scope.slides = [
         {
