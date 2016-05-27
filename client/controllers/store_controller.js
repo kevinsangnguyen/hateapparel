@@ -29,6 +29,33 @@ board.controller('storeController', function($scope){
 		}
 	]
 
+	$scope.womenproducts = [ 
+		{
+			name : "Classic T-Shirt",
+			price: "25",
+			description : "100% cotton shirt Bleh Bleh",
+			canPurchase : false,
+			soldOut : true,
+			image : imgPath + "womenshirt.jpg"
+		},
+		{
+			name : "Fitted T-Shirt",
+			price: "25",
+			description : "100% cotton shirt Bleh Bleh",
+			canPurchase : true,
+			soldOut : false,
+			image : imgPath + "womenshirt.jpg"
+		},
+		{
+			name : "Oversized Hoodie",
+			price: "35",
+			description : "Bleh Bleh Bleh",
+			canPurchase : true,
+			soldOut : false,
+			image : imgPath + "womenshirt.jpg"
+		}
+	]
+
   $scope.class = "thumb";
   $scope.changeClass = function($scope){
     if ($scope.class === "thumb")

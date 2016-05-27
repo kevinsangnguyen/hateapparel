@@ -1,0 +1,19 @@
+<div ng-controller="storeController">
+<div id="womendiv">
+	<div class="wrapper">
+		<div class="centered-wrapper">
+			<h2>Women's Products</h2>
+			<div class="allitems">
+            	<div class="item" ng-repeat="product in womenproducts">
+            		<h2>{{product.name}}</h2>
+               		<img ng-src="{{product.image}}" ng-class="class" ng-click="changeClass(this)">
+                	<p>{{product.description}}</p>
+                	<h3>${{product.price}}</h3>
+               		<button class="button sold-out" disabled ng-show="product.soldOut">Sold Out</button>
+                	<button class="button" ng-show="product.canPurchase">Add to Cart</button>
+                </div>
+            </div>	
+        </div>
+	</div>
+</div>
+</div>
