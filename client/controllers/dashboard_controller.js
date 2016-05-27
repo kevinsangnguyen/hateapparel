@@ -1,4 +1,4 @@
-board.controller('DashboardController', function($scope,$location,$routeParams,ItemFactory,$window) {
+board.controller('DashboardController', function($scope,$location,$routeParams,ItemFactory,$window,$sce) {
 
 
 scrolling = false,
@@ -13,7 +13,6 @@ function switchInto() {
   // add/remove CSS classes
 	$scope.start= false;
 	$scope.into = true;
-  console.log('into transition triggered!');
 };
 
 // transition Start
@@ -23,7 +22,6 @@ function switchStart() {
   // add/remove CSS classes
 	$scope.into = false;
 	$scope.start = true;
-  console.log('start transition triggered!');
 }
 
 // set `scrolling` to true when user scrolls
@@ -54,6 +52,24 @@ setInterval(function () {
   };
   // take a breath.. hold event listener from firing for 100ms
 }, 100);
+
+	$scope.htmlPopover = $sce.trustAsHtml('<div style="color:black">Test</div>');
+
+  //carousel slides below.
+  $scope.myInterval = 0;
+
+      $scope.slides = [
+        {
+          image: 'http://images.performgroup.com/di/library/sporting_news/6c/3a/kobe-11_rwuzvx4yp7mx1bxmbufdo09s9.jpg?w=1920&h=1080&quality=100'
+        },
+        {
+          image: 'http://sneakerhdwallpapers.com/wallpapers/2015/lebron-13-1920x1080-wallpaper.jpg'
+        },
+        {
+          image: 'http://images.performgroup.com/di/library/sporting_news/f7/a8/kevin-durant-kd8-062315-ftr-nikejpg_1xhn93vs5u93t1g31d4pokz6x8.jpg?ggnoads'
+        },
+      ];
+
 
 
 });
